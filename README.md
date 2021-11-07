@@ -1,4 +1,5 @@
-# designosource_website
+# Designsource website
+Portfolio website for Designosource generation 11
 
 ## Breakpoints
 - sm: 640px
