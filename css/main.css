@@ -1,3 +1,4 @@
+/*Font initialising*/
 @font-face {
     font-family: 'telegraf-regular';
     src: url(../assets/fonts/Telegraf-Regular.otf);
@@ -13,6 +14,7 @@
     src: url(../assets/fonts/pixelfj8pt1.normal.otf);
 }
 
+/* General variables */
 :root {
     --bgColor: #000000;
     --bgOffGrey: #191919;
@@ -30,14 +32,127 @@
     --mxBodyMobile: 1rem;
 }
 
+/* General settings */
 * {
-    cursor: url("../assets/cursor-default.svg"), auto;
+    cursor: url("../assets/cursor/cursor-default.svg"), auto;
     font-family: var(--primaryFont);
     color: var(--txtColor);
 }
 
+body {
+    background-color: var(--bgColor);
+
+    margin-top: 1rem;
+    margin-left: var(--mxBodyMobile);
+    margin-right: var(--mxBodyMobile);
+}
+
+a {
+    text-decoration: none; /*link underlines are ass*/
+}
+
+/* General classes */
+.pixel-text {
+    font-family: var(--secondaryFont);
+    font-weight: 100;
+}
+
+.bold-text {
+    font-family: var(--primaryFontBold);
+}
+
+.yellow-text {
+    color: var(--primaryYellow);
+}
+
+.logo {
+    width: 9rem;
+}
+
+.capitalized {
+    text-transform: uppercase;
+}
+
+.primary-button-blue {
+    text-align: center;
+    background-color: var(--primaryBlue);
+    padding: .7rem 1.5rem .7rem 1.5rem;
+
+    font-size: .7rem;
+}
+
+/* Navigation */
+.menu-wrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-wrap .logo {
+    position: relative;
+    z-index: 10;
+}
+
+.menu-wrap .hamburger {
+    z-index: 10;
+}
+
+.menu-wrap nav {
+    background-color: var(--bgColor);
+
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    height: 100%;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    gap: 1.6rem;
+
+    font-weight: 1000;
+    font-size: 1.5rem;
+
+    visibility: hidden;
+}
+
+/* Index page */
+.intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .5rem;
+
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.intro h1 {
+    font-size: 2.2rem;
+    text-align: center;
+    font-weight: 1000;
+}
+
+.intro p {
+    font-size: 1rem;
+    text-align: center;
+    font-weight: 100;
+    line-height: 20px;
+}
+
+.intro a {
+    margin-top: 1rem;
+}
+
 @media (min-width: 640px) {
+
 }
 
 @media (min-width: 1024px) {
+
 }
