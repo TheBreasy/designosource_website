@@ -1,0 +1,43 @@
+@font-face {
+    font-family: 'telegraf-regular';
+    src: url(../assets/fonts/Telegraf-Regular.otf);
+}
+
+@font-face {
+    font-family: 'telegraf-bold';
+    src: url(../assets/fonts/Telegraf-Bold.otf);
+}
+
+@font-face {
+    font-family: 'pixel';
+    src: url(../assets/fonts/pixelfj8pt1.normal.otf);
+}
+
+:root {
+    --bgColor: #000000;
+    --bgOffGrey: #191919;
+    --txtColor: #FFFFFF;
+    --primaryBlue: #2489E7;
+    --primaryYellow: #FFEB40;
+    --primaryGreen: #50C78D;
+    --primaryRed: #E8422C;
+
+    --primaryFont: telegraf-regular;
+    --primaryFontBold: telegraf-bold;
+    --secondaryFont: pixel;
+
+    --mxBodyDesktop: 5rem;
+    --mxBodyMobile: 1rem;
+}
+
+* {
+    cursor: url("../assets/cursor-default.svg"), auto;
+    font-family: var(--primaryFont);
+    color: var(--txtColor);
+}
+
+@media (min-width: 640px) {
+}
+
+@media (min-width: 1024px) {
+}
