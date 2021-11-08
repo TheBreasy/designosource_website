@@ -40,7 +40,6 @@
     color: var(--txtColor);
 }
 
-html,
 body {
     height: 100%;
 
@@ -368,35 +367,144 @@ a:hover {
     align-items: center;
 }
 
+.project-preview h2 {
+    margin-bottom: 2rem;
+}
+
+.project-preview {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.project-blue {
+    position: relative;
+    top: 50px;
+    left: -15px;
+}
+
+.project-red {
+    position: relative;
+    top: 60px;
+    left: 2px;
+}
+
+.project-green {
+    position: relative;
+    top: -20px;
+}
+
 .project-blue div {
     background-color: var(--primaryBlue);
+}
+
+.project-blue div img {
+    width: 33vw;
+    padding-left: .5rem;
+    padding-right: .5rem;
+    padding-top: .6rem;
+    padding-bottom: .6rem;
+
+    cursor: url("../assets/cursor/cursor-hover.svg"), auto;
 }
 
 .project-green div {
     background-color: var(--primaryGreen);
 }
 
+.project-green div img {
+    width: 50vw;
+    padding-top: .2rem;
+    padding-bottom: .2rem;
+
+    cursor: url("../assets/cursor/cursor-hover.svg"), auto;
+}
+
 .project-red div {
     background-color: var(--primaryRed);
 }
 
-.project h3 {
-    font-size: .7rem;
-    margin-top: .3rem;
+.project-red div img {
+    width: 22vw;
+    padding-left: 1rem;
+    padding-right: 1.5rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+
+    cursor: url("../assets/cursor/cursor-hover.svg"), auto;
 }
 
-.project div {
-    width: 10rem;
-    height: 7rem;
+.project h3 {
+    font-size: .6rem;
+    margin-top: .3rem;
+
+    cursor: url("../assets/cursor/cursor-hover.svg"), auto;
 }
 
 .project div img {
-    mix-blend-mode: color-burn;
+    mix-blend-mode: color-burn; 
+}
+
+.projects {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    max-width: 25rem;
 }
 
 @media (min-width: 640px) {
     /* Navigation */
     /* Navigation is fine on tablet imo (Bailey) */
+    
+    /* projects */
+    .project {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+    .project-blue {
+        position: relative;
+        top: 50px;
+        left: -130px;
+    }
+    
+    .project-red {
+        position: relative;
+        top: 100px;
+    }
+    
+    .project-green {
+        position: relative;
+        top: -10px;
+        left: -30px;
+    }
+    
+    .project-blue div img {
+        width: 12rem;
+        padding-left: .8rem;
+        padding-right: .8rem;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+    
+    .project-green div img {
+        width: 15rem;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        padding-right: 1.5rem;
+        padding-left: 1.5em;
+    }
+    
+    .project-red div img {
+        width: 10rem;
+        padding-left: 1rem;
+        padding-right: 1.8rem;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
 }
 
 @media (min-width: 1024px) {
@@ -415,7 +523,10 @@ a:hover {
     }
 
     .dino {
-        margin-top: 8rem;
+        margin-top: 0;
+
+        overflow: visible;
+        height: 50vw;
         width: fit-content;
         max-height: 55rem;
     }
@@ -428,6 +539,7 @@ a:hover {
     .menu-wrap-full {
         display: inline;
         position: fixed;
+        z-index: 1000;
         top: 0;
         left: 0;
         right: 0;
@@ -498,7 +610,7 @@ a:hover {
         height: 100%;
         background-image: url("../assets/blue-bg-with-texture.jpg");
     
-        padding-left: calc(var(--mxBodyDesktop) - 25px);
+        padding-left: var(--mxBodyDesktop);
 
         display: flex;
         flex-direction: row;
@@ -574,6 +686,64 @@ a:hover {
 
     .footer .footer-section .footer-title {
         font-size: 1.1rem;
+    }
+
+    /* projects */
+    .project-preview h2 {
+        font-size: 3.4rem;
+        margin-top: 8rem;
+    }
+
+    .project {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+    .project-blue {
+        position: relative;
+        top: 240px;
+        left: -12vw;
+    }
+    
+    .project-red {
+        position: relative;
+        top: 280px;
+        left: 40px;
+    }
+    
+    .project-green {
+        position: relative;
+        top: -10px;
+        left: 0px;
+    }
+    
+    .project-blue div img {
+        width: 26vw;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        padding-top: 2.4rem;
+        padding-bottom: 2.4rem;
+    }
+    
+    .project-green div img {
+        width: 30vw;
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+        padding-right: 3rem;
+        padding-left: 3em;
+    }
+    
+    .project-red div img {
+        width: 35vw;
+        padding-left: 1rem;
+        padding-right: 1.8rem;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+
+    .project h3 {
+        font-size: 1rem;
+        margin-top: .8rem;
     }
 }
 
