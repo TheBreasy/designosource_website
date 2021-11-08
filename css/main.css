@@ -318,8 +318,8 @@ a:hover {
 
 /* Footer */
 .footer {
-    background-color: #191919;
-    color: #FFFFFF;
+    background-color: var(--bgOffGrey);
+    color: var(--txtColor);
     height: 800px;
     position: relative;
     align-items: center;
@@ -344,7 +344,7 @@ a:hover {
 }
 
 .footer .footer-bottom {
-    background-color: #FFFFFF;
+    background-color: white;
     color: black;
     max-height: 11px;
     position: absolute;
@@ -536,8 +536,8 @@ a:hover {
     
     /* Footer */
     .footer {
-        background-color: #191919;
-        color: #FFFFFF;
+        background-color: var(--bgOffGrey);
+        color: var(--txtColor);
         height: 400px;
         position: relative;
         align-items: center;
