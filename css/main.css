@@ -33,11 +33,6 @@
     --mxBodyMobile: 1rem;
 }
 
-/* bruh if i remove this the layouting breaks, wtf. */
-main {
-    border: solid transparent 1px;
-}
-
 /* General settings */
 * {
     cursor: url("../assets/cursor/cursor-default.svg"), auto;
@@ -49,8 +44,6 @@ body {
     background-color: var(--bgColor);
 
     margin-top: 1rem;
-    margin-left: var(--mxBodyMobile);
-    margin-right: var(--mxBodyMobile);
 }
 
 section:first-child {
@@ -60,6 +53,8 @@ section:first-child {
 section {
     margin-top: 3rem;
     margin-bottom: 3rem;
+    margin-left: var(--mxBodyMobile);
+    margin-right: var(--mxBodyMobile);
 }
 
 a {
@@ -71,6 +66,19 @@ a:hover {
 }
 
 /* General classes */
+.dino {
+    margin-top: 2rem;
+    width: 14rem;
+    mix-blend-mode: color-burn;
+    overflow: hidden;
+    user-select: none;
+}
+
+.dino:hover {
+    transform-origin: bottom middle;
+    transform: translateX(-10px) rotate(-10deg);
+}
+
 .pixel-text {
     font-family: var(--secondaryFont);
     font-weight: 100;
@@ -182,9 +190,11 @@ a:hover {
 /* Navigation */
 .menu-wrap-full {
     display: none;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.493) 0%, rgba(0, 0, 0, 0) 100%);
 }
 
 .menu-wrap-compact {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.39) 0%, rgba(0, 0, 0, 0) 100%);
     position: fixed;
     top: 0;
     left: 0;
@@ -239,28 +249,57 @@ a:hover {
 }
 
 /* Index page */
+.scroll-hint {
+    display: none;
+}
+
 .intro {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: .5rem;
+    gap: 3rem;
 }
 
-.intro h1 {
+.intro-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.intro-text h1 {
     font-size: 2.2rem;
     text-align: center;
-    font-weight: 1000;
+    font-weight: 700;
+    font-style: normal;
+
+    max-width: 24rem;
 }
 
-.intro p {
+.intro-text p {
     font-size: 1rem;
     text-align: center;
-    font-weight: 100;
-    line-height: 20px;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 131.88%;
+
+    margin-top: 1rem;
+
+    max-width: 24rem;
 }
 
-.intro a {
+.intro-text a {
     margin-top: 1rem;
+}
+
+.intro-visual {
+    width: 100vw;
+    background-image: url("../assets/blue-bg-with-texture.jpg");
+
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+
+    overflow: hidden;
 }
 
 @media (min-width: 640px) {
@@ -271,9 +310,22 @@ a:hover {
 @media (min-width: 1024px) {
     /* General settings */
     body {    
-        margin-top: 1rem;
+        margin-top: 0;
+    }
+
+    section {
         margin-left: var(--mxBodyDesktop);
         margin-right: var(--mxBodyDesktop);
+    }
+
+    section:first-child {
+        margin-top: 0rem;
+    }
+
+    .dino {
+        margin-top: 8rem;
+        width: fit-content;
+        max-height: 55rem;
     }
 
     /* Navigation */
@@ -309,5 +361,100 @@ a:hover {
 
     .logo {
         cursor: url("../assets/cursor/cursor-hover.svg"), auto;
+    }
+
+    /* Index page */
+    .intro {
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 0rem;
+
+        margin-top: 0;
+        margin-right: 0;
+        margin-left: 0;
+        padding-left: var(--mxBodyDesktop);
+        height: 100vh;
+    }
+    
+    .intro-text {
+        align-items: flex-start;
+        width: 50%;
+    }
+    
+    .intro-text h1 {
+        font-size: 5vw;
+        text-align: left;
+        padding-right: 5rem;
+    
+        max-width: none;
+    }
+    
+    .intro-text p {
+        text-align: left;
+        padding-right: 10rem;
+        max-width: none;
+        font-size: 18px;
+        line-height: 131.88%;
+    }
+
+    .intro-text a {
+        margin-top: 3rem;
+    }
+    
+    .intro-visual {
+        width: 50%;
+        height: 100%;
+        background-image: url("../assets/blue-bg-with-texture.jpg");
+    
+        padding-left: calc(var(--mxBodyDesktop) - 25px);
+
+        display: flex;
+        flex-direction: row;
+        align-items: end;
+        justify-content: space-between;
+    
+        overflow: hidden;
+    }
+
+    .scroll-hint {
+        display: inline;
+        position: relative;
+        top: -3rem;
+        left: -5rem;
+
+        transform: rotate(-90deg);
+    }
+
+    .scroll-hint p {
+        position: relative;
+        text-align: end;
+        margin-bottom: .7rem;
+
+        animation-name: scrollHint;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+        animation-duration: 2s;
+    }
+
+    .scroll-hint-line {
+        background-color: white;
+        height: 2px;
+        width: 8rem;
+    }
+    
+}
+
+@keyframes scrollHint {
+    0% {
+        left: 5rem;
+        opacity: 0;
+    }
+
+    30% {
+        opacity: 1;
+    }
+
+    100% {
+        left: -8rem;
     }
 }
