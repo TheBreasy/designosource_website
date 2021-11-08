@@ -19,6 +19,7 @@
     --bgColor: #000000;
     --bgOffGrey: #191919;
     --txtColor: #FFFFFF;
+    --txtColorDark: #000000;
     --primaryBlue: #2489E7;
     --primaryYellow: #FFEB40;
     --primaryGreen: #50C78D;
@@ -65,6 +66,10 @@ a {
     text-decoration: none; /*link underlines are ass*/
 }
 
+a:hover {
+    cursor: url("../assets/cursor/cursor-hover.svg"), auto;
+}
+
 /* General classes */
 .pixel-text {
     font-family: var(--secondaryFont);
@@ -83,6 +88,10 @@ a {
     width: 9rem;
 }
 
+.fuck-cursor:hover {
+    cursor: url("../assets/cursor/cursor-fuck.svg"), auto;
+}
+
 .capitalized {
     text-transform: uppercase;
 }
@@ -92,7 +101,82 @@ a {
     background-color: var(--primaryBlue);
     padding: .7rem 1.5rem .7rem 1.5rem;
 
-    font-size: .7rem;
+    font-size: .8rem;
+}
+
+.primary-button-blue:hover {
+    background-color: white;
+    color: var(--txtColorDark);
+    position: relative;
+    top: -1px;
+    left: -1px;
+
+    -webkit-box-shadow: 3px 3px 0px 1px var(--primaryBlue); 
+    box-shadow: 3px 3px 0px 1px var(--primaryBlue);
+}
+
+.primary-button-blue:active {
+    top: 0;
+    left: 0;
+    
+    -webkit-box-shadow: 1px 1px 0px 1px var(--primaryBlue); 
+    box-shadow: 1px 1px 0px 1px var(--primaryBlue);
+}
+
+.primary-button-green {
+    text-align: center;
+    background-color: var(--primaryGreen);
+    color: var(--txtColorDark);
+
+    padding: .7rem 1.5rem .7rem 1.5rem;
+
+    font-size: .8rem;
+}
+
+.primary-button-green:hover {
+    background-color: white;
+    position: relative;
+    top: -1px;
+    left: -1px;
+
+    -webkit-box-shadow: 3px 3px 0px 1px var(--primaryGreen); 
+    box-shadow: 3px 3px 0px 1px var(--primaryGreen);
+}
+
+.primary-button-green:active {
+    top: 0;
+    left: 0;
+    
+    -webkit-box-shadow: 1px 1px 0px 1px var(--primaryGreen); 
+    box-shadow: 1px 1px 0px 1px var(--primaryGreen);
+}
+
+.primary-button-yellow {
+    text-align: center;
+    background-color: var(--primaryYellow);
+    color: var(--txtColorDark);
+
+    padding: .7rem 1.5rem .7rem 1.5rem;
+
+    font-size: .8rem;
+}
+
+.primary-button-yellow:hover {
+    background-color: white;
+    position: relative;
+    top: -1px;
+    left: -1px;
+
+    -webkit-box-shadow: 3px 3px 0px 1px var(--primaryYellow); 
+    box-shadow: 3px 3px 0px 1px var(--primaryYellow);
+}
+
+.primary-button-yellow:active {
+    top: 0;
+    left: 0;
+    
+    -webkit-box-shadow: 1px 1px 0px 1px var(--primaryYellow); 
+    box-shadow: 1px 1px 0px 1px var(--primaryYellow);
 }
 
 /* Navigation */
@@ -218,8 +302,12 @@ a {
         margin-right: var(--mxBodyDesktop);
     }
 
-    .menu-wrap-full nav .logo {
+    .logo-link {
         margin-left: 7rem;
         margin-right: 7rem;
+    }
+
+    .logo {
+        cursor: url("../assets/cursor/cursor-hover.svg"), auto;
     }
 }
