@@ -32,6 +32,11 @@
     --mxBodyMobile: 1rem;
 }
 
+/* bruh if i remove this the layouting breaks, wtf. */
+main {
+    border: solid transparent 1px;
+}
+
 /* General settings */
 * {
     cursor: url("../assets/cursor/cursor-default.svg"), auto;
@@ -45,6 +50,15 @@ body {
     margin-top: 1rem;
     margin-left: var(--mxBodyMobile);
     margin-right: var(--mxBodyMobile);
+}
+
+section:first-child {
+    margin-top: 10rem;
+}
+
+section {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
 }
 
 a {
@@ -82,23 +96,42 @@ a {
 }
 
 /* Navigation */
-.menu-wrap {
+.menu-wrap-full {
+    display: none;
+}
+
+.menu-wrap-compact {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+
+    margin-bottom: 1rem;
+}
+
+.menu-wrapper { 
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-left: var(--mxBodyMobile);
+    margin-right: var(--mxBodyMobile);
 }
 
-.menu-wrap .logo {
+.menu-wrap-compact .logo {
     position: relative;
     z-index: 10;
 }
 
-.menu-wrap .hamburger {
+.menu-wrap-compact .hamburger {
     z-index: 10;
 }
 
-.menu-wrap nav {
+.menu-wrap-compact nav {
     background-color: var(--bgColor);
 
     position: fixed;
@@ -127,9 +160,6 @@ a {
     flex-direction: column;
     align-items: center;
     gap: .5rem;
-
-    margin-top: 3rem;
-    margin-bottom: 3rem;
 }
 
 .intro h1 {
@@ -150,9 +180,46 @@ a {
 }
 
 @media (min-width: 640px) {
-
+    /* Navigation */
+    /* Navigation is fine on tablet imo (Bailey) */
 }
 
 @media (min-width: 1024px) {
+    /* General settings */
+    body {    
+        margin-top: 1rem;
+        margin-left: var(--mxBodyDesktop);
+        margin-right: var(--mxBodyDesktop);
+    }
 
+    /* Navigation */
+    .menu-wrap-compact {
+        display: none; /* You can't change html element order in css so just don't display this and display another one */
+    }
+
+    .menu-wrap-full {
+        display: inline;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+    }
+
+    .menu-wrap-full nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        margin-left: var(--mxBodyDesktop);
+        margin-right: var(--mxBodyDesktop);
+    }
+
+    .menu-wrap-full nav .logo {
+        margin-left: 7rem;
+        margin-right: 7rem;
+    }
 }

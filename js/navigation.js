@@ -1,18 +1,37 @@
 let hamburger = document.querySelector(".hamburger");
-let menu = document.querySelector(".menu-wrap nav");
+let compactMenu = document.querySelector(".menu-wrap-compact nav");
+let fullMenubg = document.querySelector(".menu-wrap-full");
+let compactMenubg = document.querySelector(".menu-wrap-compact");
+
+let scrollOffsetMinimum = 50;
 
 let isOpen = true;
 
+//Toggling the menu open and closed
 hamburger.addEventListener("click", function(){
     if(isOpen) {
         hamburger.innerHTML = "close";
-        menu.style.visibility = "visible";
+        compactMenu.style.visibility = "visible";
 
         isOpen = false;
     } else {
         hamburger.innerHTML = "menu";
-        menu.style.visibility = "hidden";
+        compactMenu.style.visibility = "hidden";
 
         isOpen = true;
     }
+});
+
+//Adding bgColor to menu when scrolling
+window.addEventListener("scroll", function(){
+    let scrollOffset = window.scrollY;
+    
+    if(scrollOffset > scrollOffsetMinimum) {
+        fullMenubg.style.backgroundColor = "var(--bgColor)";
+        compactMenubg.style.backgroundColor = "var(--bgColor)";
+        return;
+    }
+
+    fullMenubg.style.backgroundColor = "transparent";
+    compactMenubg.style.backgroundColor = "transparent";
 });
