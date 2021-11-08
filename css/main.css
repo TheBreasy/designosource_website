@@ -40,7 +40,10 @@
     color: var(--txtColor);
 }
 
+html,
 body {
+    height: 100%;
+
     background-color: var(--bgColor);
 
     margin-top: 1rem;
@@ -57,6 +60,11 @@ section {
     margin-right: var(--mxBodyMobile);
 }
 
+section h2 {
+    text-align: center;
+    font-size: 1.5rem;
+}
+
 a {
     text-decoration: none; /*link underlines are ass*/
 }
@@ -67,7 +75,7 @@ a:hover {
 
 /* General classes */
 .dino {
-    margin-top: 2rem;
+    margin-top: 3rem;
     width: 14rem;
     mix-blend-mode: color-burn;
     overflow: hidden;
@@ -248,7 +256,7 @@ a:hover {
     visibility: hidden;
 }
 
-/* Index page */
+/* Index intro page */
 .scroll-hint {
     display: none;
 }
@@ -258,12 +266,18 @@ a:hover {
     flex-direction: column;
     align-items: center;
     gap: 3rem;
+
+    margin-left: 0;
+    margin-right: 0;
 }
 
 .intro-text {
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    padding-left: var(--mxBodyMobile);
+    padding-right: var(--mxBodyMobile);
 }
 
 .intro-text h1 {
@@ -292,7 +306,7 @@ a:hover {
 }
 
 .intro-visual {
-    width: 100vw;
+    width: 100%;
     background-image: url("../assets/blue-bg-with-texture.jpg");
 
     display: flex;
@@ -300,6 +314,84 @@ a:hover {
     justify-content: end;
 
     overflow: hidden;
+}
+
+/* Footer */
+.footer {
+    background-color: #191919;
+    color: #FFFFFF;
+    height: 800px;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer .footer-content {
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.footer .footer-content .footer-section {
+    flex: 1;
+    padding: 2rem 4rem;
+}
+
+.footer .footer-content .footer-section .pages ul li{
+    display: block;
+    margin-bottom: 10px;
+}
+
+.footer .footer-bottom {
+    background-color: #FFFFFF;
+    color: black;
+    max-height: 11px;
+    position: absolute;
+    bottom:0;
+    left: 0;
+    width: 100%;
+    padding-bottom: 0.4rem;
+    overflow: hidden;
+    font-size: 1rem;
+}
+
+.footer .footer-section .footer-title {
+    font-size: 0.8rem;
+}
+
+
+/* Index projects */
+.project {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.project-blue div {
+    background-color: var(--primaryBlue);
+}
+
+.project-green div {
+    background-color: var(--primaryGreen);
+}
+
+.project-red div {
+    background-color: var(--primaryRed);
+}
+
+.project h3 {
+    font-size: .7rem;
+    margin-top: .3rem;
+}
+
+.project div {
+    width: 10rem;
+    height: 7rem;
+}
+
+.project div img {
+    mix-blend-mode: color-burn;
 }
 
 @media (min-width: 640px) {
@@ -442,6 +534,47 @@ a:hover {
         width: 8rem;
     }
     
+    /* Footer */
+    .footer {
+        background-color: #191919;
+        color: #FFFFFF;
+        height: 400px;
+        position: relative;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .footer-logo {
+        text-align: center;
+        width: 18rem;
+        padding-left: 2rem;
+    }
+
+    .footer .footer-content {
+        height: 350px;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .footer .footer-content .footer-section {
+        flex: 1;
+        padding: 4rem 2rem 5rem;
+        text-align: start;
+    }
+
+    .footer .footer-content .footer-section p{
+        margin-bottom: 1.5rem;
+    }
+
+    .footer .footer-content .footer-section .pages ul li{
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    .footer .footer-section .footer-title {
+        font-size: 1.1rem;
+    }
 }
 
 @keyframes scrollHint {
