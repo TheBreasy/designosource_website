@@ -35,7 +35,7 @@
 
 /* General settings */
 * {
-    cursor: url("../assets/cursor/cursor-default.svg"), auto;
+    cursor: url("../assets/cursor/cursor-default.svg") 10 5, auto;
     font-family: var(--primaryFont);
     color: var(--txtColor);
 }
@@ -73,7 +73,14 @@ a {
 }
 
 a:hover {
-    cursor: url("../assets/cursor/cursor-hover.svg"), auto;
+    cursor: url("../assets/cursor/cursor-hover.svg")20 20, auto;
+}
+
+*:active{
+    cursor: url("../assets/cursor/cursor-click.svg")10 0, auto;
+}
+a:active{
+    cursor: url("../assets/cursor/cursor-click.svg")22 15, auto;
 }
 
 /* General classes */
@@ -737,7 +744,8 @@ a:hover {
         animation-name: scrollHint;
         animation-iteration-count: infinite;
         animation-timing-function: linear;
-        animation-duration: 2s;
+        animation-duration:6s;
+        animation-delay: 3s;
     }
 
     .scroll-hint-line {
@@ -873,7 +881,7 @@ a:hover {
     }
 }
 
-@keyframes scrollHint {
+/* @keyframes scrollHint {
     0% {
         left: 5rem;
         opacity: 0;
@@ -885,5 +893,27 @@ a:hover {
 
     100% {
         left: -8rem;
+    }
+} */
+
+@keyframes scrollHint {
+    0% {
+        left: 0rem;
+        opacity: 1;
+    }
+
+    4% {
+        left: -1rem;
+        opacity: 1;
+    }
+
+    8% {
+        left: 0rem;
+        opacity: 1;
+    }
+
+    100% {
+        left: 0rem;
+        opacity: 1;
     }
 }
