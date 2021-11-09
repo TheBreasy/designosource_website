@@ -95,6 +95,7 @@ a:active{
 .dino:hover {
     transform-origin: bottom middle;
     transform: translateX(-10px) rotate(-10deg);
+    cursor: url("../assets/cursor/cursor-rock.svg"), auto;
 }
 
 .pixel-text {
@@ -880,21 +881,6 @@ a:active{
         font-size: 2rem;
     }
 }
-
-/* @keyframes scrollHint {
-    0% {
-        left: 5rem;
-        opacity: 0;
-    }
-
-    30% {
-        opacity: 1;
-    }
-
-    100% {
-        left: -8rem;
-    }
-} */
 
 @keyframes scrollHint {
     0% {
