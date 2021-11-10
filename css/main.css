@@ -498,7 +498,7 @@ a:active{
 .get-in-touch {
     margin-left: 0;
     margin-right: 0;
-    margin-top: 17rem;
+    margin-top: 5rem;
     margin-bottom: 2rem;
     overflow-x: hidden;
 }
@@ -727,12 +727,13 @@ a:active{
 
 /* Teams page */
 /* Intro */
-.intro-team {
+main .intro-team {
     display: flex;
     flex-direction: column;
     align-items: center;
 
-    margin-top: 0;
+    margin-top: 6rem;
+    margin-bottom: 4rem;
 }
 
 .intro-team h1 {
@@ -750,7 +751,129 @@ a:active{
     line-height: 130%;
 }
 
-/*pictures*/
+/* Pictures aka a whole bunch of resizing */
+.pictures-team {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.team-member p {
+    text-align: end;
+    font-size: .6rem;
+}
+
+.member-1 img {
+    width: 7rem;
+}
+
+.member-1 {
+    position: relative;
+    top: -25px;
+    left: -70px;
+}
+
+.member-2 img {
+    width: 6.6rem;
+}
+
+.member-2 {
+    position: relative;
+    top: -64px;
+    left: 75px;
+}
+
+.member-3 img {
+    width: 6.6rem;
+}
+
+.member-3 {
+    position: relative;
+    top: -105px;
+    left: -80px;
+}
+
+.member-4 img {
+    width: 5rem;
+}
+
+.member-4 {
+    position: relative;
+    top: -180px;
+    left: 25px;
+}
+
+.member-5 img {
+    width: 8rem;
+}
+
+.member-5 {
+    position: relative;
+    top: -148px;
+    left: -55px;
+}
+
+.member-6 img {
+    width: 6.5rem;
+}
+
+.member-6 {
+    position: relative;
+    top: -165px;
+    left: 75px;
+}
+
+.member-7 img {
+    width: 6.5rem;
+}
+
+.member-7 {
+    position: relative;
+    top: -235px;
+    left: -80px;
+}
+
+.member-8 img {
+    width: 8rem;
+}
+
+.member-8 {
+    position: relative;
+    top: -205px;
+    left: 0;
+}
+
+.member-9 img {
+    width: 7.8rem;
+}
+
+.member-9 {
+    position: relative;
+    top: -180px;
+    left: 65px;
+}
+
+.member-10 img {
+    width: 6.5rem;
+}
+
+.member-10 {
+    position: relative;
+    top: -200px;
+    left: -80px;
+}
+
+.member-11 img {
+    width: 6.5rem;
+}
+
+.member-11 {
+    position: relative;
+    top: -280px;
+    left: 40px;
+
+    margin-bottom: -280px;
+}
 
 @media (min-width: 640px) {
     /* Navigation */
