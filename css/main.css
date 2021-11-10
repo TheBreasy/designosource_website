@@ -758,9 +758,15 @@ main .intro-team {
     align-items: center;
 }
 
+.team-member img:hover {
+    cursor: url("../assets/cursor/cursor-rock.svg"), auto;
+    object-fit: cover;
+}
+
 .team-member p {
     text-align: end;
     font-size: .6rem;
+    letter-spacing: 0.12em;
 }
 
 .member-1 img {
@@ -872,10 +878,113 @@ main .intro-team {
     top: -280px;
     left: 40px;
 
-    margin-bottom: -280px;
+    margin-bottom: -280px; /* Remove the height position relative leaves behind */
 }
 
 @media (min-width: 640px) {
+    /* Teams page */
+    /* team members */
+    .member-1 img {
+        width: 12rem;
+    }
+    
+    .member-1 {
+        top: -25px;
+        left: -100px;
+    }
+    
+    .member-2 img {
+        width: 11.6rem;
+    }
+    
+    .member-2 {
+        top: -64px;
+        left: 125px;
+    }
+    
+    .member-3 img {
+        width: 11.6rem;
+    }
+    
+    .member-3 {
+        top: -125px;
+        left: -130px;
+    }
+    
+    .member-4 img {
+        width: 10rem;
+    }
+    
+    .member-4 {
+        top: -240px;
+        left: 70px;
+    }
+    
+    .member-5 img {
+        width: 13rem;
+    }
+    
+    .member-5 {
+        top: -190px;
+        left: -100px;
+    }
+    
+    .member-6 img {
+        width: 11.5rem;
+    }
+    
+    .member-6 {
+        top: -220px;
+        left: 110px;
+    }
+    
+    .member-7 img {
+        width: 11.5rem;
+    }
+    
+    .member-7 {
+        top: -265px;
+        left: -150px;
+    }
+    
+    .member-8 img {
+        width: 13rem;
+    }
+    
+    .member-8 {
+        top: -230px;
+        left: 0;
+    }
+    
+    .member-9 img {
+        width: 12.8rem;
+    }
+    
+    .member-9 {
+        top: -190px;
+        left: 130px;
+    }
+    
+    .member-10 img {
+        width: 11.5rem;
+    }
+    
+    .member-10 {
+        top: -230px;
+        left: -130px;
+    }
+    
+    .member-11 img {
+        width: 11.5rem;
+    }
+    
+    .member-11 {
+        top: -340px;
+        left: 80px;
+    
+        margin-bottom: -340px; /* Remove the margin position relative leaves behind */
+    }
+
     /* Navigation */
     /* Navigation is fine on tablet imo (Bailey) */
     
@@ -1004,6 +1113,122 @@ main .intro-team {
         height: 50vw;
         width: fit-content;
         max-height: 55rem;
+    }
+
+    /* Teams page */
+    /* team members */
+    main .intro-team {
+        margin-top: 10rem;
+    }
+
+    .intro-team h1 {
+        font-size: 5vw;
+        margin-bottom: 1rem;
+    }
+
+    .team-member p {
+        font-size: 1rem;
+    }
+
+    .member-1 img {
+        width: 23rem;
+    }
+    
+    .member-1 {
+        top: -15px;
+        left: -200px;
+    }
+    
+    .member-2 img {
+        width: 22.8rem;
+    }
+    
+    .member-2 {
+        top: -124px;
+        left: 276px;
+    }
+    
+    .member-3 img {
+        width: 22.9rem;
+    }
+    
+    .member-3 {
+        top: -239px;
+        left: -275px;
+    }
+    
+    .member-4 img {
+        width: 18rem;
+    }
+    
+    .member-4 {
+        top: -520px;
+        left: 80px;
+    }
+    
+    .member-5 img {
+        width: 28rem;
+    }
+    
+    .member-5 {
+        top: -420px;
+        left: -155px;
+    }
+    
+    .member-6 img {
+        width: 23.1rem;
+    }
+    
+    .member-6 {
+        top: -520px;
+        left: 280px;
+    }
+    
+    .member-7 img {
+        width: 23rem;
+    }
+    
+    .member-7 {
+        top: -690px;
+        left: -270px;
+    }
+    
+    .member-8 img {
+        width: 28rem;
+    }
+    
+    .member-8 {
+        top: -610px;
+        left: 0;
+    }
+    
+    .member-9 img {
+        width: 28rem;
+    }
+    
+    .member-9 {
+        top: -530px;
+        left: 240px;
+    }
+    
+    .member-10 img {
+        width: 23rem;
+    }
+    
+    .member-10 {
+        top: -580px;
+        left: -275px;
+    }
+    
+    .member-11 img {
+        width: 23rem;
+    }
+    
+    .member-11 {
+        top: -845px;
+        left: 120px;
+    
+        margin-bottom: -845px; /* Remove the margin position relative leaves behind */
     }
 
     /* Navigation */
@@ -1338,6 +1563,130 @@ main .intro-team {
         display: none;
     }
 }
+
+@media (min-width: 1400px) {
+    /* Teams page */
+    /* team members */
+    .pictures-team {
+        margin-bottom: 12rem;
+    }
+
+    main .intro-team {
+        margin-top: 12.2rem;
+    }
+
+    .intro-team p {
+        max-width: none;
+    }
+
+    .team-member p {
+        margin-top: 1rem;
+        letter-spacing: 0.12em;
+    }
+
+    .member-1 img {
+        width: 31.8rem;
+    }
+    
+    .member-1 {
+        top: 48px;
+        left: -270px;
+    }
+    
+    .member-2 img {
+        width: 32rem;
+    }
+    
+    .member-2 {
+        top: -112px;
+        left: 385px;
+    }
+    
+    .member-3 img {
+        width: 31.7rem;
+    }
+    
+    .member-3 {
+        top: -280px;
+        left: -380px;
+    }
+    
+    .member-4 img {
+        width: 25rem;
+    }
+    
+    .member-4 {
+        top: -680px;
+        left: 110px;
+    }
+    
+    .member-5 img {
+        width: 39rem;
+    }
+    
+    .member-5 {
+        top: -550px;
+        left: -215px;
+    }
+    
+    .member-6 img {
+        width: 32rem;
+    }
+    
+    .member-6 {
+        top: -695px;
+        left: 390px;
+    }
+    
+    .member-7 img {
+        width: 31.5rem;
+    }
+    
+    .member-7 {
+        top: -940px;
+        left: -380px;
+    }
+    
+    .member-8 img {
+        width: 38.5rem;
+    }
+    
+    .member-8 {
+        top: -835px;
+        left: 0;
+    }
+    
+    .member-9 img {
+        width: 38rem;
+    }
+    
+    .member-9 {
+        top: -720px;
+        left: 335px;
+    }
+    
+    .member-10 img {
+        width: 31.8rem;
+    }
+    
+    .member-10 {
+        top: -790px;
+        left: -380px;
+    }
+    
+    .member-11 img {
+        width: 31.6rem;
+    }
+    
+    .member-11 {
+        top: -1165px;
+        left: 170px;
+    
+        margin-bottom: -1165px; /* Remove the margin position relative leaves behind */
+    }
+
+}
+
 @keyframes scrollHint {
     0% {
         left: 0rem;
