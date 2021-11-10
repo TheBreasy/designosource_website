@@ -272,7 +272,6 @@ a:active{
     font-size: 3rem;
     text-align: center;
     margin: 130px 2rem 5rem;
-    font-weight: bold;
 }
 
 .contact-content .contact-section .small {
@@ -383,6 +382,14 @@ a:active{
     justify-content: center;
 }
 
+.footer-section p, a, li {
+    padding-bottom: 1rem;
+}
+
+.contact a {
+    display: block;
+}
+
 .footer .footer-content {
     height: 350px;
     display: flex;
@@ -484,12 +491,8 @@ a:active{
 }
 
 .project-red div img {
-    width: 22vw;
-    padding-left: 1rem;
-    padding-right: 1.5rem;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-
+    width: 40vw;
+    display: block;
     cursor: url("../assets/cursor/cursor-hover.svg"), auto;
 }
 
@@ -926,7 +929,17 @@ main .intro-team {
 
     margin-bottom: -280px; /* Remove the height position relative leaves behind */
 }
-
+.intro-work {
+    margin-top: 10rem;
+    margin-bottom: 3rem;
+}
+.intro-work h1 {
+    font-size: 2.2rem;
+    text-align: center;
+    font-weight: 700;
+    font-style: normal;
+    margin-bottom: 3rem;
+}
 @media (min-width: 640px) {
     /* Teams page */
     /* team members */
@@ -1074,11 +1087,7 @@ main .intro-team {
     }
     
     .project-red div img {
-        width: 10rem;
-        padding-left: 1rem;
-        padding-right: 1.8rem;
-        padding-top: 1rem;
-        padding-bottom: 1rem;
+        width: 15rem;
     }
     /* Get in touch */
     .get-in-touch h2 {
@@ -1482,10 +1491,6 @@ main .intro-team {
     
     .project-red div img {
         width: 35vw;
-        padding-left: 1rem;
-        padding-right: 1.8rem;
-        padding-top: 1rem;
-        padding-bottom: 1rem;
     }
 
     .project h3 {
@@ -1788,6 +1793,9 @@ main .intro-team {
         left: 170px;
     
         margin-bottom: -1165px; /* Remove the margin position relative leaves behind */
+    }
+    .mt-20 {
+        margin-top: 20rem;
     }
 }
 
