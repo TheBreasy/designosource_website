@@ -443,6 +443,13 @@ a:active{
     gap: 2rem;
 }
 
+.project-preview-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
 .project-blue {
     position: relative;
     top: 50px;
@@ -940,6 +947,7 @@ main .intro-team {
     font-style: normal;
     margin-bottom: 3rem;
 }
+
 @media (min-width: 640px) {
     /* Teams page */
     /* team members */
@@ -1320,6 +1328,11 @@ main .intro-team {
 
     .logo {
         cursor: url("../assets/cursor/cursor-hover.svg"), auto;
+    }
+
+    /* Work page */
+    .project-preview-page {
+        margin-bottom: 20rem;
     }
 
     /* Index page */
