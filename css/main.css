@@ -80,7 +80,7 @@ a {
 }
 
 a:hover {
-    cursor: url("../assets/cursor/cursor-hover.svg")20 20, auto;
+    cursor: url("../assets/cursor/cursor-hover.svg"), auto;
 }
 
 *:active{
