@@ -1352,6 +1352,7 @@ section .other-h2 {
         height: 50vw;
         width: fit-content;
         max-width: none;
+        max-height: 54rem;
     }
 
     /* work pages */
