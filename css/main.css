@@ -140,6 +140,8 @@ a:active{
 .pixel-text {
     font-family: var(--secondaryFont);
     font-weight: 100;
+    font-smooth: never;
+    -webkit-font-smoothing: none;
 }
 
 .bold-text {
@@ -249,6 +251,35 @@ a:active{
     
     -webkit-box-shadow: 1px 1px 0px 1px var(--primaryYellow); 
     box-shadow: 1px 1px 0px 1px var(--primaryYellow);
+}
+
+.primary-button-red {
+    text-align: center;
+    background-color: var(--primaryRed);
+    padding: .7rem 1.5rem .7rem 1.5rem;
+
+    letter-spacing: 0.12em;
+
+    font-size: .8rem;
+}
+
+.primary-button-red:hover {
+    background-color: white;
+    color: var(--txtColorDark);
+    position: relative;
+    top: -1px;
+    left: -1px;
+
+    -webkit-box-shadow: 3px 3px 0px 1px var(--primaryRed);
+    box-shadow: 3px 3px 0px 1px var(--primaryRed);
+}
+
+.primary-button-red:active {
+    top: 0;
+    left: 0;
+
+    -webkit-box-shadow: 1px 1px 0px 1px var(--primaryRed);
+    box-shadow: 1px 1px 0px 1px var(--primaryRed);
 }
 /* Preloader */
 #loader {
@@ -464,7 +495,7 @@ a:active{
 .footer {
     background-color: var(--bgOffGrey);
     color: var(--txtColor);
-    height: 800px;
+    height: 910px;
     position: relative;
     align-items: center;
     justify-content: center;
@@ -485,9 +516,10 @@ a:active{
     text-align: center;
 }
 
-.footer .footer-content .footer-section {
-    flex: 1;
-    padding: 2rem 4rem;
+.footer-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .footer .footer-content .footer-section .pages ul li{
@@ -1089,6 +1121,10 @@ section .other-h2 {
 
 #image-owc {
     width: 47.5rem;
+}
+
+.detail-cta {
+    text-align: center;
 }
 
 @media (min-width: 640px) {
@@ -1702,25 +1738,31 @@ section .other-h2 {
         height: 350px;
         display: flex;
         flex-direction: row;
+        text-align: left;
     }
 
     .footer .footer-content .footer-section {
         flex: 1;
         padding: 4rem 2rem 5rem;
-        text-align: start;
+        align-items: flex-start;
     }
 
     .footer .footer-content .footer-section p{
         margin-bottom: 1.5rem;
     }
 
-    .footer .footer-content .footer-section .pages ul li{
+    .footer .footer-content .footer-section .pages ul li {
         display: block;
         margin-bottom: 10px;
     }
 
+    .footer .footer-content .footer-section .pages ul li a {
+        text-align: left;
+    }
+
     .footer .footer-section .footer-title {
         font-size: 1.1rem;
+        text-align: left;
     }
 
     /* projects */
