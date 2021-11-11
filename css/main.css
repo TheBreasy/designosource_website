@@ -1,12 +1,20 @@
 /*Font initialising*/
 @font-face {
-    font-family: 'telegraf-regular';
-    src: url(../assets/fonts/Telegraf-Regular.otf);
+    font-family: 'Telegraf';
+    src: url('../assets/fonts/Telegraf-Bold.woff2') format('woff2'),
+        url('../assets/fonts/Telegraf-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
-    font-family: 'telegraf-bold';
-    src: url(../assets/fonts/Telegraf-Bold.otf);
+    font-family: 'Telegraf';
+    src: url('../assets/fonts/Telegraf-Regular.woff2') format('woff2'),
+        url('../assets/fonts/Telegraf-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
@@ -26,7 +34,7 @@
     --primaryGreen: #50C78D;
     --primaryRed: #E8422C;
 
-    --primaryFont: telegraf-regular;
+    --primaryFont: Telegraf;
     --primaryFontBold: telegraf-bold;
     --secondaryFont: pixel;
 
@@ -103,7 +111,7 @@ a:active{
 }
 
 .bold-text {
-    font-family: var(--primaryFontBold);
+    font-weight: bold;
 }
 
 .yellow-text {
@@ -126,6 +134,8 @@ a:active{
     text-align: center;
     background-color: var(--primaryBlue);
     padding: .7rem 1.5rem .7rem 1.5rem;
+
+    letter-spacing: 0.12em;
 
     font-size: .8rem;
 }
@@ -156,6 +166,8 @@ a:active{
 
     padding: .7rem 1.5rem .7rem 1.5rem;
 
+    letter-spacing: 0.12em;
+
     font-size: .8rem;
 }
 
@@ -183,6 +195,8 @@ a:active{
     color: var(--txtColorDark);
 
     padding: .7rem 1.5rem .7rem 1.5rem;
+
+    letter-spacing: 0.12em;
 
     font-size: .8rem;
 }
@@ -525,7 +539,7 @@ a:active{
 }
 .get-in-touch h2 {
     color: var(--bgTextGrey);
-    font-family: var(--primaryFontBold);
+    font-weight: bold;
 
     font-size: 26vw;
     transform: scaleX(1.08);
