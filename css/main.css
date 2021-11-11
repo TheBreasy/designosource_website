@@ -1072,6 +1072,15 @@ main .intro-team {
         gap: 2rem;
         top: -8vw;
     }
+
+    .get-in-touch p:hover {
+        cursor: url("../assets/cursor/cursor-hover.svg"), auto;
+    }
+
+    .get-in-touch img:hover {
+        cursor: url("../assets/cursor/cursor-hover.svg"), auto;
+    }
+
     .get-in-touch img {
         width: 2.2rem;
     }
@@ -1141,6 +1150,11 @@ main .intro-team {
         height: 50vw;
         width: fit-content;
         max-height: 55rem;
+    }
+
+    /* work pages */
+    .intro-work h1 {
+        font-size: 5vw;
     }
 
     /* Teams page */
