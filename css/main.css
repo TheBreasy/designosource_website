@@ -218,6 +218,21 @@ a:active{
     -webkit-box-shadow: 1px 1px 0px 1px var(--primaryYellow); 
     box-shadow: 1px 1px 0px 1px var(--primaryYellow);
 }
+/* Preloader */
+#loader {
+    background-color: var(--bgColor);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 99999999999;
+    transition: opacity .7s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
 /* Navigation */
 .menu-wrap-full {

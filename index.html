@@ -15,6 +15,18 @@
 </head>
 <body>
 <header>
+    <!-- Preloader -->
+    <div id="loader">
+        <lottie-player
+            id="firstLottie"
+            src="./assets/logoAnimation.json"
+            speed="1"
+            style="width: 500px; height: 150px;"
+            loop
+            autoplay
+        ></lottie-player>
+    </div>
+
     <!-- start nav -->
     <!-- compact navigation -->
     <div class="menu-wrap-compact">
@@ -37,16 +49,7 @@
             <a class="capitalized bold-text" href="approach.html">the approach</a>
             <a class="capitalized bold-text" href="work.html">the work</a>
             <a class="logo-link" href="index.html">
-                <!-- <lottie-player id="firstLottie" src="https://assets2.lottiefiles.com/private_files/lf30_mqhwkyau.json" style="width:400px; height: 150px;">"></lottie-player> -->
-                <lottie-player
-                        src="https://assets2.lottiefiles.com/private_files/lf30_mqhwkyau.json"
-                        background="transparent"
-                        speed="1"
-                        style="width: 300px; height: 100px;"
-                        autoplay
-                        reset
-                        hover
-                ></lottie-player>
+                <img class="logo" src="./assets/logo-designosource-wit.svg" alt="Designosource logo">
             </a>
             <a class="capitalized bold-text" href="team.html">the team</a>
             <a class="capitalized bold-text" href="contact.html">contact us</a>
@@ -166,6 +169,7 @@
 <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 <script src="https://unpkg.com/@lottiefiles/lottie-interactivity@latest/dist/lottie-interactivity.min.js"></script>
 
+<script src="./js/preloader.js"></script>
 <script src="./js/navigation.js"></script>
 </body>
 </html>
