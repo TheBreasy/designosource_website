@@ -2106,18 +2106,9 @@ section .other-h2 {
 }
 
 @media ( max-height: 800px ) { 
-    .dino {
-        height: 43rem;
-    }
 
     .intro-text {
         margin-top: 6rem;
-    }
-}
-
-@media ( max-height: 750px ) { 
-    .dino {
-        height: 40rem;
     }
 }
 
