@@ -75,10 +75,6 @@ body {
     margin-top: 1rem;
 }
 
-section:first-child {
-    margin-top: 10rem;
-}
-
 section {
     margin-top: 3rem;
     margin-bottom: 3rem;
@@ -2089,10 +2085,6 @@ section .other-h2 {
 @media ( max-height: 750px ) { 
     .dino {
         height: 40rem;
-    }
-
-    .intro-text h1 {
-        font-size: 5rem;
     }
 }
 
