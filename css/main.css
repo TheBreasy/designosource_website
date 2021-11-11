@@ -435,6 +435,7 @@ a:active{
 .intro-visual {
     width: 100%;
     background-image: url("../assets/blue-bg-with-texture.jpg");
+    background-size: cover;
 
     display: flex;
     flex-direction: row;
