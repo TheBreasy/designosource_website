@@ -103,7 +103,27 @@ a:hover {
     cursor: url("../assets/cursor/cursor-click.svg")10 0, auto;
 }
 a:active{
-    cursor: url("../assets/cursor/cursor-click.svg")22 15, auto;
+    cursor: url("../assets/cursor/cursor-click.svg"), auto;
+}
+
+.project div img:active {
+    cursor: url("../assets/cursor/cursor-click.svg"), auto;
+}
+
+.get-in-touch a img:active {
+    cursor: url("../assets/cursor/cursor-click.svg"), auto;
+}
+
+.get-in-touch a p:active {
+    cursor: url("../assets/cursor/cursor-click.svg"), auto;
+}
+
+.contact-icon:active {
+    cursor: url("../assets/cursor/cursor-click.svg"), auto;
+}
+
+.contact-icon-small:active {
+    cursor: url("../assets/cursor/cursor-click.svg"), auto;
 }
 
 /* General classes */
