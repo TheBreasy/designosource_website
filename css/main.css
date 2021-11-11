@@ -2049,6 +2049,32 @@ section .other-h2 {
     }
 }
 
+@media ( max-height: 900px ) { 
+    .dino {
+        height: 48rem;
+    }
+}
+
+@media ( max-height: 800px ) { 
+    .dino {
+        height: 43rem;
+    }
+
+    .intro-text {
+        margin-top: 6rem;
+    }
+}
+
+@media ( max-height: 750px ) { 
+    .dino {
+        height: 40rem;
+    }
+
+    .intro-text h1 {
+        font-size: 5rem;
+    }
+}
+
 @keyframes scrollHint {
     0% {
         left: 0rem;
