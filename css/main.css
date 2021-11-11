@@ -125,7 +125,6 @@ a:active{
 /* General classes */
 .dino {
     margin-top: 3rem;
-    width: 14rem;
     mix-blend-mode: color-burn;
     overflow: hidden;
     user-select: none;
@@ -1348,11 +1347,9 @@ section .other-h2 {
 
     .dino {
         margin-top: 0;
-
         overflow: visible;
         height: 50vw;
         width: fit-content;
-        max-height: 55rem;
     }
 
     /* work pages */
