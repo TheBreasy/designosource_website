@@ -51,6 +51,22 @@
 ::selection {
     background-color: var(--primaryGreen);
 }
+
+.blue-span::selection {
+    background-color: var(--primaryBlue);
+    color: white;
+}
+
+.red-span::selection {
+    background-color: var(--primaryRed);
+    color: white;
+}
+
+.yellow-span::selection {
+    background-color: var(--primaryYellow);
+    color: black;
+}
+
 body {
     height: 100%;
 
@@ -687,7 +703,8 @@ a:active{
 .services p {
     padding: 1rem 2rem;
     width: max-content;
-    font-family: var(--primaryFontBold);
+    font-family: var(--primaryFont);
+    font-weight: bold;
     text-transform: uppercase;
     border: 1px solid var(--txtColor);
 }
@@ -759,6 +776,9 @@ a:active{
 .hatch span {
     color: var(--primaryGreen);
     text-transform: uppercase;
+    font-family: var(--secondaryFont);
+    letter-spacing: 130%;
+    font-weight: bold;
 }
 .hatch img {
     text-align: center;
@@ -1841,9 +1861,10 @@ section .other-h2 {
         font-size: 4vw;
     }
     .hatch span {
-        color: var(--txtColor);
+        color: var(--primaryGreen);
         text-transform: uppercase;
-        font-family: var(--primaryFontBold);
+        font-family: var(--secondaryFont);
+        letter-spacing: 130%;
     }
     .eggs-desktop {
         display: block;
