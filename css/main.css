@@ -128,6 +128,7 @@ a:active{
     mix-blend-mode: color-burn;
     overflow: hidden;
     user-select: none;
+    max-width: 20rem;
 }
 
 .dino:hover {
@@ -1350,6 +1351,7 @@ section .other-h2 {
         overflow: visible;
         height: 50vw;
         width: fit-content;
+        max-width: none;
     }
 
     /* work pages */
