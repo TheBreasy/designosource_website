@@ -31,6 +31,17 @@
 </head>
 <body>
 <header>
+    <!-- Preloader -->
+    <div id="loader">
+        <lottie-player
+            id="logo-lottie"
+            src="./assets/logoAnimation.json"
+            speed="1"
+            loop
+            autoplay
+        ></lottie-player>
+    </div>
+
     <!-- start nav -->
     <!-- compact navigation -->
     <div class="menu-wrap-compact">
@@ -196,6 +207,10 @@
     </div>
 </div>
 
+<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+<script src="https://unpkg.com/@lottiefiles/lottie-interactivity@latest/dist/lottie-interactivity.min.js"></script>
+
+<script src="./js/preloader.js"></script>
 <script src="./js/navigation.js"></script>
 </body>
 </html>
