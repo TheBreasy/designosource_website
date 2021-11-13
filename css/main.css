@@ -44,7 +44,7 @@
 
 /* General settings */
 * {
-    cursor: url("../assets/cursor/cursor-default.svg") 10 5, auto;
+    cursor: url("../assets/cursor/cursor-default.svg") -1 0, auto;
     font-family: var(--primaryFont);
     color: var(--txtColor);
 }
@@ -96,7 +96,7 @@ a:hover {
 }
 
 *:active{
-    cursor: url("../assets/cursor/cursor-click.svg")10 0, auto;
+    cursor: url("../assets/cursor/cursor-click.svg"), auto;
 }
 a:active{
     cursor: url("../assets/cursor/cursor-click.svg"), auto;
@@ -502,7 +502,7 @@ a:active{
 }
 
 .footer-section p, a, li {
-    padding-bottom: 1rem;
+    margin-bottom: 1rem;
 }
 
 .contact a {
@@ -541,6 +541,7 @@ a:active{
 
 .footer .footer-section .footer-title {
     font-size: 0.8rem;
+    margin-top: 1.2rem;
 }
 
 
@@ -622,6 +623,8 @@ a:active{
     font-size: 26vw;
     transform: scaleX(1.08);
     max-width: 100vw;
+
+    user-select: none;
 }
 
 .get-in-touch a {
@@ -1624,6 +1627,14 @@ section .other-h2 {
         margin-bottom: 1rem;
         margin-left: var(--mxBodyDesktop);
         margin-right: var(--mxBodyDesktop);
+    }
+
+    .menu-wrap-compact .menu-wrapper nav a {
+        padding: .5rem;
+    }
+
+    .menu-wrap-full nav a {
+        padding: .5rem;
     }
 
     .logo-link {
