@@ -1681,7 +1681,6 @@ section .other-h2 {
         width: 50%;
         height: 100%;
         background-image: url("../assets/blue-bg-with-texture.jpg");
-        padding-top: 11rem;
         padding-left: var(--mxBodyDesktop);
         display: flex;
         flex-direction: row;
@@ -2109,6 +2108,10 @@ section .other-h2 {
 
     .intro-text {
         margin-top: 6rem;
+    }
+
+    .dino {
+        max-height: 40rem;
     }
 }
 
