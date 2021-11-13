@@ -495,7 +495,7 @@ a:active{
 .footer {
     background-color: var(--bgOffGrey);
     color: var(--txtColor);
-    height: 910px;
+    height: 700px;
     position: relative;
     align-items: center;
     justify-content: center;
@@ -1272,9 +1272,10 @@ section .other-h2 {
         align-items: flex-end;
     }
     .project-blue {
+        width: fit-content;
         position: relative;
         top: -100px;
-        left: 120px;
+        left: 180px;
     }
     
     .project-red {
@@ -1778,7 +1779,7 @@ section .other-h2 {
     .project-blue {
         position: relative;
         top: -160px;
-        left: 200px;
+        left: 280px;
     }
     
     .project-red {
@@ -2057,7 +2058,7 @@ section .other-h2 {
     /* some projects */
     .project-blue {
         top: -160px;
-        left: 310px;
+        left: 390px;
     }
     
     .project-red {
