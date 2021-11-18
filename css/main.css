@@ -1476,6 +1476,7 @@ section .other-h2 {
     .contact-icon-small {
         width: 2rem;
         margin-bottom: .2rem;
+        margin-left: .9rem;
     }
 
     .contact-mail-phone:nth-child(2) img {
