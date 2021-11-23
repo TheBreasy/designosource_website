@@ -43,6 +43,17 @@
 }
 
 /* General settings */
+/*meetMonocle*/
+#goodbytes__widget {
+    bottom: 200px !important;
+}
+
+/*CookieConsent*/
+.cc-color-override-688238583.cc-revoke {
+    color: black !important;
+    background-color: yellow !important;
+}
+
 * {
     cursor: url("../assets/cursor/cursor-default.svg") -1 0, auto;
     font-family: var(--primaryFont);
