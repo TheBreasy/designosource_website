@@ -1029,7 +1029,7 @@ main .intro-team {
 }
 
 .project-green-other div img {
-    width: 50vw;
+    max-width: 50vw;
     padding-top: .2rem;
     padding-bottom: .2rem;
 
@@ -1038,7 +1038,7 @@ main .intro-team {
 
 
 .project-red-other div img {
-    width: 50vw;
+    max-width: 50vw;
     padding-top: .2rem;
     padding-bottom: .2rem;
 
@@ -1047,9 +1047,11 @@ main .intro-team {
 
 .project-red-other div img {
     mix-blend-mode: normal;
+    object-fit: contain;
 }
 .project-green-other div img {
     mix-blend-mode: normal;
+    object-fit: contain;
 }
 
 section .other-h2 {
@@ -1116,6 +1118,7 @@ section .other-h2 {
 .about-detail-1 {
     margin-top: 1rem;
     max-width: 80%;
+    line-height: 1.2em;
 }
 
 .project-preview-detail {
@@ -1150,13 +1153,13 @@ section .other-h2 {
     /*DETAIL PAGE*/
 
     .project-green-other div img {
-        max-width: 39vw;
-        max-height: 39vw;
-        object-fit: contain;
+        max-width: 20vw;
+        max-height: 20vw;
     }
 
     .project-red-other div img {
-        width: 40vw;
+        max-width: 20vw;
+        max-height: 20vw;
     }
 
     .project-red-other {
@@ -1171,6 +1174,9 @@ section .other-h2 {
     .project-other-right {
         float: right;
 
+    }
+    .about-detail-1 {
+        line-height: 1.3em;
     }
 
     /* Teams page */
@@ -1411,8 +1417,11 @@ section .other-h2 {
     }
 
     /*DETAIL*/
+    .about-detail-1 {
+        line-height: 1.5em;
+    }
     .other-width{
-        width: 100%;
+        width: 70%;
     }
 
     .detail-text {
@@ -1438,6 +1447,7 @@ section .other-h2 {
 
     .project-red-other div img {
         max-width: 35vw;
+        object-fit: contain;
     }
 
     /* Contact page */
@@ -2120,11 +2130,11 @@ section .other-h2 {
 
     /*DETAIL*/
     .project-green-other div img {
-        max-width: 40vw;
+        max-width: 35vw;
     }
 
     .project-red-other div img {
-        max-width: 40vw;
+        max-width: 35vw;
     }
 }
 
