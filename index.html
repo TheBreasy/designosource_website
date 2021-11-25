@@ -232,7 +232,6 @@
         onStatusChange: function(status) {
             var type = this.options.type;
             var didConsent = this.hasConsented();
-            console.log("change consent: " + didConsent);
             if (didConsent) {
                 initGTM(window, document, 'script', 'dataLayer', 'GTM-MLRF65L');
             }
@@ -243,7 +242,6 @@
         onInitialise: function (status) {
             var type = this.options.type;
             var didConsent = this.hasConsented();
-            console.log("init consent: " + didConsent);
             if (didConsent) {
                 initGTM(window, document, 'script', 'dataLayer', 'GTM-MLRF65L');
             }
