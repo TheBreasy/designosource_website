@@ -1,15 +1,10 @@
 let reload = false;
-let _trackingCookies = [];
 
 function initGTM(w, d, s, l, i) {
-    console.log("reload = " + reload);
-    console.log("tracking = " + _trackingCookies);
     if(reload){
-        for (let index = 0; index < _trackingCookies.length; index++) {
-            document.cookie = _trackingCookies[index].name + "; ";
-            console.log(_trackingCookies[index]);
-        }
+        location.reload();
     }
+
     reload = true;
     w[l] = w[l] || [];
     w[l].push({
@@ -30,7 +25,6 @@ function stopGTM() {
         if(cookie.name == "cookieconsent_status"){
             return;
         }
-        _trackingCookies.push(cookie.name, cookie.value);
         cookieStore.delete(cookie.name);
     }));
 }
