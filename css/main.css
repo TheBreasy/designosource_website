@@ -718,6 +718,12 @@ a:active{
     text-decoration: underline;
 }
 
+/*approach*/
+.services {
+    margin-top: 6rem;
+    margin-bottom: 8rem;
+}
+
 /* Index meet the team */
 .team-section {
     display: flex;
@@ -753,6 +759,8 @@ a:active{
     display: grid;
     grid-template-columns: repeat(1, minmax(0, 1fr));
     text-align: center;
+    margin-top: 8rem;
+    margin-bottom: 8rem;
 }
 .team-section-short img {
     display: none;
