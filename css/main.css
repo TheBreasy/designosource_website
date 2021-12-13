@@ -565,7 +565,7 @@ a:active{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 1rem;
+    margin-bottom: 2.5rem;
 }
 
 .project div {
@@ -589,7 +589,7 @@ a:active{
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 2rem;
+    gap: 4rem;
 }
 
 .project-blue div img {
