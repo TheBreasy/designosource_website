@@ -885,6 +885,41 @@ main .intro-team {
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 6rem;
+}
+
+.name-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    gap: .5rem;
+    margin-top: 5px;
+    background-color: var(--bgColor);
+}
+
+.description-wrapper {
+    background-color: rgb(0, 0, 0);
+    width: 15rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+
+    position: relative;
+    z-index: 5;
+    visibility: hidden;
+    margin-bottom: -100%;  /* Remove height from object */
+}
+
+.description-wrapper p {
+    font-size: 15px !important;
+    text-align: left !important;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.name-wrapper .dropdown-icon {
+    width: 17px;
+    height: 9px;
 }
 
 .team-member img:hover {
@@ -898,117 +933,21 @@ main .intro-team {
     letter-spacing: 0.12em;
 }
 
-.member-1 img {
-    width: 7rem;
+.team-member img {
+    width: 15rem; 
+    height: 15rem;
+    object-fit: cover;
 }
 
-.member-1 {
+.team-member {
     position: relative;
-    top: -25px;
-    left: -70px;
+    height: 15rem;
 }
 
-.member-2 img {
-    width: 6.6rem;
+.team-member:last-child {
+    margin-bottom: 5rem;
 }
 
-.member-2 {
-    position: relative;
-    top: -64px;
-    left: 75px;
-}
-
-.member-3 img {
-    width: 6.6rem;
-}
-
-.member-3 {
-    position: relative;
-    top: -105px;
-    left: -80px;
-}
-
-.member-4 img {
-    width: 5rem;
-}
-
-.member-4 {
-    position: relative;
-    top: -180px;
-    left: 25px;
-}
-
-.member-5 img {
-    width: 8rem;
-}
-
-.member-5 {
-    position: relative;
-    top: -148px;
-    left: -55px;
-}
-
-.member-6 img {
-    width: 6.5rem;
-}
-
-.member-6 {
-    position: relative;
-    top: -165px;
-    left: 75px;
-}
-
-.member-7 img {
-    width: 6.5rem;
-}
-
-.member-7 {
-    position: relative;
-    top: -235px;
-    left: -80px;
-}
-
-.member-8 img {
-    width: 8rem;
-}
-
-.member-8 {
-    position: relative;
-    top: -205px;
-    left: 0;
-}
-
-.member-9 img {
-    width: 7.8rem;
-}
-
-.member-9 {
-    position: relative;
-    top: -180px;
-    left: 65px;
-}
-
-.member-10 img {
-    width: 6.5rem;
-}
-
-.member-10 {
-    position: relative;
-    top: -200px;
-    left: -80px;
-}
-
-.member-11 img {
-    width: 6.5rem;
-}
-
-.member-11 {
-    position: relative;
-    top: -280px;
-    left: 40px;
-
-    margin-bottom: -280px; /* Remove the height position relative leaves behind */
-}
 .intro-work {
     margin-top: 10rem;
     margin-bottom: 3rem;
@@ -1194,8 +1133,9 @@ section .other-h2 {
 
     /* Teams page */
     /* team members */
-    .member-1 img {
-        width: 12rem;
+    .team-member img {
+        height: auto;
+        object-fit: cover;
     }
     
     .member-1 {
@@ -1203,96 +1143,84 @@ section .other-h2 {
         left: -100px;
     }
     
-    .member-2 img {
-        width: 11.6rem;
-    }
-    
     .member-2 {
-        top: -64px;
+        top: -100px;
         left: 125px;
     }
     
-    .member-3 img {
-        width: 11.6rem;
-    }
-    
     .member-3 {
-        top: -125px;
-        left: -130px;
-    }
-    
-    .member-4 img {
-        width: 10rem;
+        top: -190px;
+        left: -160px;
     }
     
     .member-4 {
-        top: -240px;
-        left: 70px;
+        top: -260px;
+        left: 120px;
     }
     
     .member-5 img {
-        width: 13rem;
+        width: 23rem;
+    }
+
+    .member-5 .description-wrapper {
+        width: 23rem;
     }
     
     .member-5 {
-        top: -190px;
+        top: -200px;
         left: -100px;
-    }
-    
-    .member-6 img {
-        width: 11.5rem;
     }
     
     .member-6 {
         top: -220px;
-        left: 110px;
+        left: 140px;
     }
     
     .member-7 img {
-        width: 11.5rem;
+        width: 20rem;
+    }
+
+    .member-7 .description-wrapper {
+        width: 20rem;
     }
     
     .member-7 {
         top: -265px;
-        left: -150px;
+        left: -120px;
     }
     
     .member-8 img {
-        width: 13rem;
+        width: 25rem;
+    }
+
+    .member-8 .description-wrapper {
+        width: 25rem;
     }
     
     .member-8 {
-        top: -230px;
+        top: -270px;
         left: 0;
     }
     
-    .member-9 img {
-        width: 12.8rem;
-    }
-    
     .member-9 {
-        top: -190px;
+        top: -230px;
         left: 130px;
     }
     
-    .member-10 img {
-        width: 11.5rem;
-    }
-    
     .member-10 {
-        top: -230px;
+        top: -350px;
         left: -130px;
     }
     
-    .member-11 img {
-        width: 11.5rem;
-    }
-    
     .member-11 {
-        top: -340px;
-        left: 80px;
+        top: -280px;
+        left: 20px;
     
-        margin-bottom: -340px; /* Remove the margin position relative leaves behind */
+        margin-bottom: -280px; /* Remove the margin position relative leaves behind */
+    }
+
+    .team-member:last-child {
+        margin-bottom: 0rem;
     }
 
     /* Navigation */
@@ -1539,6 +1467,9 @@ section .other-h2 {
     .member-1 img {
         width: 23rem;
     }
+    .member-1 .description-wrapper {
+        width: 23rem;
+    }
     
     .member-1 {
         top: -15px;
@@ -1546,6 +1477,10 @@ section .other-h2 {
     }
     
     .member-2 img {
+        width: 22.8rem;
+    }
+
+    .member-2 .description-wrapper {
         width: 22.8rem;
     }
     
@@ -1557,6 +1492,10 @@ section .other-h2 {
     .member-3 img {
         width: 22.9rem;
     }
+
+    .member-3 .description-wrapper {
+        width: 22.9rem;
+    }
     
     .member-3 {
         top: -239px;
@@ -1566,73 +1505,105 @@ section .other-h2 {
     .member-4 img {
         width: 18rem;
     }
+
+    .member-4 .description-wrapper {
+        width: 18rem;
+    }
     
     .member-4 {
-        top: -520px;
-        left: 80px;
+        top: -320px;
+        left: 120px;
     }
     
     .member-5 img {
         width: 28rem;
     }
+
+    .member-5 .description-wrapper {
+        width: 28rem;
+    }
     
     .member-5 {
-        top: -420px;
+        top: -200px;
         left: -155px;
     }
     
     .member-6 img {
         width: 23.1rem;
     }
+
+    .member-6 .description-wrapper {
+        width: 23.1rem;
+    }
     
     .member-6 {
-        top: -520px;
+        top: -260px;
         left: 280px;
     }
     
     .member-7 img {
         width: 23rem;
     }
+
+    .member-7 .description-wrapper {
+        width: 23rem;
+    }
     
     .member-7 {
-        top: -690px;
+        top: -300px;
         left: -270px;
     }
     
     .member-8 img {
         width: 28rem;
     }
+
+    .member-8 .description-wrapper {
+        width: 28rem;
+    }
     
     .member-8 {
-        top: -610px;
+        top: -250px;
         left: 0;
     }
     
     .member-9 img {
         width: 28rem;
     }
+
+    .member-9 .description-wrapper {
+        width: 28rem;
+    }
     
     .member-9 {
-        top: -530px;
+        top: -170px;
         left: 240px;
     }
     
     .member-10 img {
         width: 23rem;
     }
+
+    .member-10 .description-wrapper {
+        width: 23rem;
+    }
     
     .member-10 {
-        top: -580px;
+        top: -200px;
         left: -275px;
     }
     
     .member-11 img {
         width: 23rem;
     }
+
+    .member-11 .description-wrapper {
+        width: 23rem;
+    }
     
     .member-11 {
-        top: -845px;
-        left: 120px;
+        top: -200px;
+        left: 160px;
     
         margin-bottom: -845px; /* Remove the margin position relative leaves behind */
     }
@@ -2008,11 +1979,14 @@ section .other-h2 {
     }
 
     .team-member p {
-        margin-top: 1rem;
         letter-spacing: 0.12em;
     }
 
     .member-1 img {
+        width: 31.8rem;
+    }
+
+    .member-1 .description-wrapper {
         width: 31.8rem;
     }
     
@@ -2024,93 +1998,133 @@ section .other-h2 {
     .member-2 img {
         width: 32rem;
     }
+
+    .member-2 .description-wrapper {
+        width: 32rem;
+    }
     
     .member-2 {
-        top: -112px;
+        top: -80px;
         left: 385px;
     }
     
     .member-3 img {
         width: 31.7rem;
     }
+
+    .member-3 .description-wrapper {
+        width: 31.7rem;
+    }
     
     .member-3 {
-        top: -280px;
-        left: -380px;
+        top: -50px;
+        left: -350px;
     }
     
     .member-4 img {
         width: 25rem;
     }
+
+    .member-4 .description-wrapper {
+        width: 25rem;
+    }
     
     .member-4 {
-        top: -680px;
-        left: 110px;
+        top: -80px;
+        left: 200px;
     }
     
     .member-5 img {
         width: 39rem;
     }
+
+    .member-5 .description-wrapper {
+        width: 39rem;
+    }
     
     .member-5 {
-        top: -550px;
+        top: 280px;
         left: -215px;
     }
     
     .member-6 img {
         width: 32rem;
     }
+
+    .member-6 .description-wrapper {
+        width: 32rem;
+    }
     
     .member-6 {
-        top: -695px;
+        top: 180px;
         left: 390px;
     }
     
     .member-7 img {
         width: 31.5rem;
     }
+
+    .member-7 .description-wrapper {
+        width: 31.5rem;
+    }
     
     .member-7 {
-        top: -940px;
+        top: 200px;
         left: -380px;
     }
     
     .member-8 img {
         width: 38.5rem;
     }
+
+    .member-8 .description-wrapper {
+        width: 38.5rem;
+    }
     
     .member-8 {
-        top: -835px;
+        top: 350px;
         left: 0;
     }
     
     .member-9 img {
         width: 38rem;
     }
+
+    .member-9 .description-wrapper {
+        width: 38rem;
+    }
     
     .member-9 {
-        top: -720px;
+        top: 600px;
         left: 335px;
     }
     
     .member-10 img {
         width: 31.8rem;
     }
+
+    .member-10 .description-wrapper {
+        width: 31.8rem;
+    }
     
     .member-10 {
-        top: -790px;
+        top: 400px;
         left: -380px;
     }
     
     .member-11 img {
         width: 31.6rem;
     }
+
+    .member-11 .description-wrapper {
+        width: 31.6rem;
+    }
     
     .member-11 {
-        top: -1165px;
+        top: 500px;
         left: 170px;
     
-        margin-bottom: -1165px; /* Remove the margin position relative leaves behind */
+        margin-bottom: 800px !important; /* Remove the margin position relative leaves behind */
     }
     .mt-20 {
         margin-top: 20rem;
