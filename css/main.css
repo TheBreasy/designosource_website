@@ -63,6 +63,10 @@
     background-color: var(--primaryGreen);
 }
 
+.dropdown-icon {
+    user-select: none;
+}
+
 .blue-span::selection {
     background-color: var(--primaryBlue);
     color: white;
