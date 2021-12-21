@@ -1,0 +1,158 @@
+/*Font initialising*/
+@font-face {
+    font-family: 'Telegraf';
+    src: url('../assets/fonts/Telegraf-Bold.woff2') format('woff2'),
+        url('../assets/fonts/Telegraf-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Telegraf';
+    src: url('../assets/fonts/Telegraf-Regular.woff2') format('woff2'),
+        url('../assets/fonts/Telegraf-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'pixel';
+    src: url(../assets/fonts/pixelfj8pt1.normal.otf);
+}
+
+/* General variables */
+:root {
+    --bgColor: #000000;
+    --bgOffGrey: #191919;
+    --bgTextGrey: #262626;
+    --txtColor: #FFFFFF;
+    --txtColorDark: #000000;
+    --primaryBlue: #2489E7;
+    --primaryYellow: #FFEB40;
+    --primaryGreen: #50C78D;
+    --primaryRed: #E8422C;
+
+    --primaryFont: Telegraf;
+    --primaryFontBold: telegraf-bold;
+    --secondaryFont: pixel;
+
+    --mxBodyDesktop: 5rem;
+    --mxBodyMobile: 1rem;
+}
+
+/* Navigation */
+.menu-wrap-full-beta{
+    display: none;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.493) 0%, rgba(0, 0, 0, 0) 100%);
+    transition: 0.1s linear;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.menu-wrap-full-beta a {
+    padding-bottom: 0;
+}
+
+#beta-button{
+    color: var(--primaryBlue);
+    border: 2px solid white;
+    background-color: white;
+    padding: 0.5rem 0.6rem;
+}
+
+.logo-b {
+    width: 9rem;
+}
+
+@media (min-width: 1154px) {
+    .menu-wrap-full-beta {
+        display: inline;
+        position: fixed;
+        z-index: 1000;
+        top: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+    }
+
+    .menu-wrap-full-beta nav {
+        /* display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center; */
+
+        display: grid;
+        grid-template-columns: 52% 48%;
+        grid-template-rows: 1fr;
+
+        margin-top: 1.5rem;
+        margin-bottom: 1rem;
+        margin-left: var(--mxBodyDesktop);
+        margin-right: var(--mxBodyDesktop);
+    }
+
+    .logo-beta{
+        margin-left: 1rem;
+    }
+
+    .nav-beta{
+        display: flex;
+        justify-content: space-around;        
+    }
+
+    .logo-link-beta {
+        /* margin-left: 7rem; */
+        margin-right: 7rem;
+    }
+
+    .menu-wrap-full-beta nav a {
+        padding: .5rem;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+}
+
+@media (max-width: 1154px) and (min-width: 1024px) {
+    .menu-wrap-full-beta {
+        display: inline;
+        position: fixed;
+        z-index: 1000;
+        top: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+    }
+
+    .menu-wrap-full-beta nav {
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: 44% 56%;
+
+        margin-top: 1.5rem;
+        margin-bottom: 1rem;
+        margin-left: var(--mxBodyDesktop);
+        margin-right: var(--mxBodyDesktop);
+    }
+
+    .logo-beta{
+        margin-left: 1rem;
+    }
+
+    .nav-beta{
+        display: flex;
+        justify-content: space-around;        
+    }
+
+    .logo-link-beta {
+        /* margin-left: 7rem; */
+        margin-right: 7rem;
+    }
+
+    .menu-wrap-full-beta nav a {
+        padding: .5rem;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+}
