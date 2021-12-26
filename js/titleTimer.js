@@ -1,4 +1,4 @@
-var introKeywords = ["website", "branding", "agency", "app", "illustration"];
+var introKeywords = ["website", "branding", "agency", "app", "graphic"];
 var currentKeywordId = 0;
 var timerDuration = .9;
 
