@@ -90,6 +90,10 @@ body {
     margin-top: 1rem;
 }
 
+.changeAnimation {
+    animation: changeKeyword .7s infinite;
+}
+
 section {
     margin-top: 3rem;
     margin-bottom: 3rem;
@@ -296,6 +300,7 @@ a:active{
     -webkit-box-shadow: 1px 1px 0px 1px var(--primaryRed);
     box-shadow: 1px 1px 0px 1px var(--primaryRed);
 }
+
 /* Preloader */
 #loader {
     background-color: var(--bgColor);
@@ -1978,6 +1983,38 @@ section .other-h2 {
 }
 
 @media (min-width: 1400px) {
+    /* Services */
+    .service-1 {
+        grid-column-start: 5;
+    }
+    .service-2 {
+        grid-column-start: 11;
+    }
+    .service-3 {
+        grid-column-start: 6;
+    }
+    .service-4 {
+        grid-column-start: 9;
+    }
+    .service-5 {
+        grid-column-start: 12;
+    }
+    .service-6 {
+        grid-column-start: 4;
+    }
+    .service-7 {
+        grid-column-start: 10;
+    }
+    .service-8 {
+        grid-column-start: 7;
+    }
+    .service-9 {
+        grid-column-start: 11;
+    }
+    .service-10 {
+        grid-column-start: 6;
+    }
+
     /* Teams page */
     /* team members */
     .pictures-team {
