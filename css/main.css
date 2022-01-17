@@ -1132,8 +1132,9 @@ section .other-h2 {
 .detail-eyecatcher-4 iframe {
     max-width: 70%;
     margin-left: 15%;
-    height: 100%;
-    max-height: 36rem;
+    height: 17rem;
+    width: 46rem;
+    max-height: 14rem;
     object-fit: cover;
 }
 
