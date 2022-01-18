@@ -705,12 +705,14 @@ a:active{
 }
 
 .grid-team {
-    width: 80% !important;
+    width: 80%;
+    height: auto;
     padding-top: 1em;
 }
 
 .grid-values-team div h3{
     padding-top: 1em;
+    font-family: pixel;
 }
 
 .icon-values {
@@ -1395,7 +1397,8 @@ section .other-h2 {
     }
 
     .grid-team {
-        width: 60% !important;
+        width: 60%;
+        height: auto;
         padding-top: 1em;
     }
 
@@ -1993,7 +1996,8 @@ section .other-h2 {
     }
 
     .grid-team {
-        width: 80% !important;
+        width: 80%;
+        height: auto;
         padding-top: 1em;
     }
 
