@@ -712,7 +712,11 @@ a:active{
 
 .grid-values-team div h3{
     padding-top: 1em;
-    font-family: pixel;
+    font-family: var(--secondaryFont);
+    font-weight: 100;
+    font-size: 14px;
+    font-smooth: never;
+    -webkit-font-smoothing: none;
 }
 
 .icon-values {
@@ -1927,7 +1931,7 @@ section .other-h2 {
     .project-yellow {
         position: relative;
         top: -140px;
-        left: 260px;
+        left: 320px;
 
         margin-bottom: -130px;
     }
