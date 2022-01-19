@@ -705,18 +705,21 @@ a:active{
 }
 
 .grid-team {
-    width: 80%;
+    width: 40%;
     height: auto;
     padding-top: 1em;
 }
 
 .grid-values-team div h3{
-    padding-top: 1em;
+    margin-top: 0.8rem;
     font-family: var(--secondaryFont);
     font-weight: 100;
-    font-size: 14px;
+    font-size: 0.7rem;
     font-smooth: never;
     -webkit-font-smoothing: none;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    text-align: center;
 }
 
 .icon-values {
@@ -1394,16 +1397,21 @@ section .other-h2 {
     }
 
     .grid-values-team {
-        display: grid;
-        grid-template-columns: repeat(3, minmax(0, 1fr));
+        display: inline-grid;
+        grid-template-columns: 14% 14% 14% 14% 14% 20%;
         gap: 0rem;
-        text-align: center;
+        text-align: left;
     }
 
     .grid-team {
-        width: 60%;
+        width: 80%;
         height: auto;
         padding-top: 1em;
+    }
+
+    .grid-values-team div h3{
+        font-size: 0.5rem;
+        text-align: left;
     }
 
     .about {
@@ -1993,16 +2001,22 @@ section .other-h2 {
     }
 
     .grid-values-team {
-        display: grid;
-        grid-template-columns: 20% 20% 20% 20% 20%;
+        display: inline-grid;
+        grid-template-columns: 12% 12% 12% 12% 12% 40%;
         gap: 0rem;
         text-align: center;
     }
 
     .grid-team {
+        display: grid;
         width: 80%;
         height: auto;
         padding-top: 1em;
+    }
+
+    .grid-values-team div h3{
+        font-size: 0.65rem;
+        text-align: left;
     }
 
     .intro-approach h1 {
