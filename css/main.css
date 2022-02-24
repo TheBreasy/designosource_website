@@ -1080,6 +1080,14 @@ section .other-h2 {
     background-color: #F7B49C;
 }
 
+.manestarters1 {
+    background-color: #3CB7B2;
+}
+
+.manestarters2 {
+    background-color: #F8B476;
+}
+
 .detail-eyecatcher {
     margin: 3rem var(--mxBodyMobile);
     padding: 2rem 1rem;
