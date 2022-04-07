@@ -608,7 +608,8 @@ a:active{
     cursor: url("../assets/cursor/cursor-hover.svg"), auto;
 }
 
-.project-green div img {
+.project-green div img,
+.project-green-2 div img {
     width: 70%;
 
     cursor: url("../assets/cursor/cursor-hover.svg"), auto;
@@ -1231,8 +1232,13 @@ section .other-h3 {
     }
 
     .project-red-other {
-        margin-top: 60%;
-        margin-right: 2rem;
+        margin-bottom: 60%;
+        margin-right: 1rem;
+    }
+
+    .project-green-other {
+        margin-bottom: 60%;
+        margin-right: 1rem;
     }
 
     .project-other-left {
@@ -1373,11 +1379,19 @@ section .other-h3 {
         left: -120px;
     }
 
+    .project-green-2 {
+        position: relative;
+        top: 0px;
+        left: -120px;
+        margin-top: -6.2rem;
+    }
+
     .project-blue div img {
         width: 12rem;
     }
 
-    .project-green div img {
+    .project-green div img, 
+    .project-green-2 div img {
         width: 15rem;
     }
 
@@ -1528,6 +1542,18 @@ section .other-h3 {
     .detail-eyecatcher-3 {
         margin-right: 5rem;
         margin-left: 5rem;
+    }
+
+    .project-red-other {
+        margin-top: 60%;
+        margin-right: 1rem;
+        margin-bottom: 0;
+    }
+
+    .project-green-other {
+        margin-top: 0;
+        margin-right: 1rem;
+        margin-bottom: 0;
     }
 
     .project-green-other div img {
@@ -1972,11 +1998,19 @@ section .other-h3 {
         left: -140px;
     }
 
+    .project-green-2 {
+        position: relative;
+        top: 0px;
+        left: -140px;
+        margin-top: 2.5rem;
+    }
+
     .project-blue div img {
         width: 17rem;
     }
 
-    .project-green div img {
+    .project-green div img,
+    .project-green-2 div img {
         width: 22rem;
     }
 
@@ -2371,11 +2405,18 @@ section .other-h3 {
         left: -260px;
     }
 
+    .project-green-2 {
+        top: 0px;
+        left: -260px;
+        margin-top: 7rem;
+    }
+
     .project-blue div img {
         width: 22rem;
     }
 
-    .project-green div img {
+    .project-green div img,
+    .project-green-2 div img {
         width: 30rem;
     }
 
