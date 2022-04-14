@@ -1053,7 +1053,10 @@ section .other-h2 {
 
 section .other-h3 {
     text-align: start;
-    margin-top: 1.1rem;
+}
+
+section .detail-h3 {
+    margin-top: 2rem;
 }
 
 .detail-text-1 {
@@ -1189,7 +1192,12 @@ section .other-h3 {
 }
 
 .other-text-1 {
-    margin-bottom: 2rem;
+    margin-bottom: 2rem;    
+    flex: 2;
+}
+.other-text-2 {
+    margin-bottom: 2rem;    
+    flex: 1.5;
 }
 
 #image-owc {
