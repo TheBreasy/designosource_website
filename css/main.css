@@ -640,6 +640,10 @@ a:active{
     max-width: 25rem;
 }
 
+.projects-2 {
+    margin-top: -4rem;
+}
+
 /* Get in touch */
 .get-in-touch {
     margin-left: 0;
@@ -1014,6 +1018,10 @@ main .intro-team {
     margin-bottom: 3rem;
 }
 
+.manestarters-project {
+    top: 50px;
+}
+
 /*DETAIL PAGE*/
 
 
@@ -1227,7 +1235,20 @@ section .detail-h3 {
         height: 150px;
     }
 
+    .work-page {
+        position: relative;
+        top: -215px;
+    }
+
+    .projects-2 {
+        margin-top: -22rem;
+    }
+
     /*DETAIL PAGE*/
+
+    .manestarters-project {
+        top: 50px;
+    }
 
     .project-green-other div img {
         max-width: 20vw;
@@ -1496,6 +1517,20 @@ section .detail-h3 {
     }
 }
 @media (min-width: 1024px) {
+
+    .manestarters-project {
+        top: 50px;
+    }
+
+    .work-page {
+        position: relative;
+        top: -100px;
+    }
+
+    .projects-2 {
+        margin-top: -17rem;
+    }
+
     /* General settings */
     body {
         margin-top: 0;
@@ -1572,6 +1607,10 @@ section .detail-h3 {
     .project-red-other div img {
         max-width: 35vw;
         object-fit: contain;
+    }
+
+    .manestarters-project {
+        top: 50px;
     }
 
     /* Contact page */
@@ -2002,7 +2041,6 @@ section .detail-h3 {
 
     .project-green {
         position: relative;
-        top: -10px;
         left: -140px;
     }
 
@@ -2189,6 +2227,17 @@ section .detail-h3 {
 }
 
 @media (min-width: 1400px) {
+    .manestarters-project {
+        top: 50px;
+    }
+
+    .work-page {
+        top: 0;
+    }
+
+    .get-in-touch-work-page {
+        margin-top: -2rem;
+    }
     /* Services */
     .service-1 {
         grid-column-start: 5;
@@ -2409,7 +2458,6 @@ section .detail-h3 {
 
 
     .project-green {
-        top: -10px;
         left: -260px;
     }
 
@@ -2457,6 +2505,10 @@ section .detail-h3 {
 }
 
 @media ( max-height: 800px ) {
+
+    .manestarters-project {
+        top: 50px;
+    }
 
     .intro-text {
         margin-top: 6rem;
